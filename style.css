@@ -11,10 +11,16 @@ background-color: #3e1e5b - purple
 body {
     margin: 0;
     font-family: Quicksand, sans-serif;
+    opacity: 0.9;
 }
 
 body, html {
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* header */
@@ -43,6 +49,42 @@ header ul {
     gap: 30px;
     margin: 20px;
 }
+
+header li {
+    padding: 0px 5px;
+    transition: all 0.2s;
+    
+}
+
+header li:hover {
+    padding-bottom: 15px;
+    box-shadow: 0 6px 4px -4px #3e1e5b ;
+}
+
+.lock {
+    background: gray;
+    border-radius: 3px;
+    width: 17px;
+    height: 12px;
+    margin-top: 6px;
+    position: relative;
+  }
+  
+  .lock:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border:3px solid gray;
+    top: -14px;
+    left: 2.3px;
+    width: 7px;
+    height: 19px;
+    border-radius: 35px 35px 0 0;
+  }
+
+  .lock-item {
+      display: flex;
+  }
 
 /* banner */
 
