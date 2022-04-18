@@ -20,10 +20,11 @@ body, html {
 /* header */
 header {
     display: flex;
-    background-color: #f0edde;
+    background-color: rgb(68, 161, 217, 0.2);
     justify-content: space-between;
     padding: 10px;
     padding-bottom: 20px;
+    border: 5px double #44a1d9;
     
 }
 
@@ -75,7 +76,7 @@ header ul {
     font-weight: bold;
 }
 
-.banner button {
+button {
     font-size: 30px;
     padding: 5px 15px;
     border-radius: 2em;
@@ -90,6 +91,76 @@ header ul {
     transition: all 0.2s; 
 }
 
-.banner button:hover {
+button:hover {
     border-color: rgba(255,255,255,1);
+}
+
+/* Aims */
+
+.information {
+    border: 5px double #3e1e5b;
+    background-color: rgb(62, 30, 91, 0.4);
+}
+
+.information h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.information img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+
+}
+
+/* training details */
+
+.training-details {
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+
+}
+
+/* call to action */
+
+.call-to-action {
+    background-color: #dc3b60;
+    border: 5px double #652332;
+    font-size: 25px;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-sponsors {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(68, 161, 217, 0.2);
+    border: 5px double #44a1d9;
 }
