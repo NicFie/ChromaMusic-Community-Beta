@@ -208,3 +208,7 @@ footer {
     background-color: rgb(68, 161, 217, 0.2);
     border: 5px double #44a1d9;
 }
+
+#mat-expansion-panel-header-0 > span > mat-panel-title {
+    visibility: hidden;
+}
