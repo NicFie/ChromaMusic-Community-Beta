@@ -47,7 +47,7 @@ header ul {
     display: flex;
     margin: 0;
     padding: 0;
-    font-size: 25px;
+    font-size: 18px;
     gap: 30px;
     margin: 20px;
 }
@@ -133,6 +133,7 @@ button {
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s; 
+    cursor: pointer;
 }
 
 button:hover {
@@ -192,6 +193,15 @@ button:hover {
     padding: 40px;
     margin: auto;
     text-align: center;
+    display: flex;
+}
+
+.call-to-action .signup {
+    width: 45%;
+}
+
+.call-to-action span {
+    font-size: 500px;
 }
 
 .logo-sponsors {
@@ -209,10 +219,11 @@ footer {
     border: 5px double #44a1d9;
 }
 
-h1.schoolbox-stepper-header-text.ng-star-inserted {
+/*h1.schoolbox-stepper-header-text.ng-star-inserted {
     visibility: hidden;
 }
 
 mat-panel-title.accentTextColor.schoolbox-panel-header-title.mat-expansion-panel-header-title {
     visibility: hidden;
-}
+}*/
+
