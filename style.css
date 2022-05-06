@@ -209,6 +209,10 @@ footer {
     border: 5px double #44a1d9;
 }
 
-#mat-expansion-panel-header-0 > span > mat-panel-title {
+h1.schoolbox-stepper-header-text.ng-star-inserted {
+    visibility: hidden;
+}
+
+mat-panel-title.accentTextColor.schoolbox-panel-header-title.mat-expansion-panel-header-title {
     visibility: hidden;
 }
