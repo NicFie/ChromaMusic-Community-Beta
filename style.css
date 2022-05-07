@@ -110,7 +110,7 @@ header li:hover {
 }
 
 .banner h1 {
-    font-size: 50px;
+    font-size: 55px;
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
 }
@@ -118,6 +118,9 @@ header li:hover {
 .banner p {
     font-size: 22px;
     font-weight: bold;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
 }
 
 button {
@@ -134,6 +137,7 @@ button {
     text-align:center;
     transition: all 0.2s; 
     cursor: pointer;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -144,7 +148,7 @@ button:hover {
 
 .information {
     border: 5px double #3e1e5b;
-    background-color: rgb(62, 30, 91, 0.4);
+    /*background-color: rgb(62, 30, 91, 0.4);*/
 }
 
 .information h2 {
@@ -171,16 +175,28 @@ button:hover {
     align-items: center;
     text-align: center;
     width: 15%;
+    background-color: rgb(62, 30, 91, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0px;
+    
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 
 }
+
+
 
 /* training details */
 
 .training-details {
-    font-size: 30px;
-    text-align: center;
-    width: 50%;
-    margin: auto;
+    font-size: 25px;
+    text-align: left;
+    padding: 30px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d8fce0;
+    
 
 }
 
@@ -219,11 +235,108 @@ footer {
     border: 5px double #44a1d9;
 }
 
-/*h1.schoolbox-stepper-header-text.ng-star-inserted {
-    visibility: hidden;
+/*About-us*/
+
+.about-us a {
+    text-decoration: underline;
+    color: blue;
 }
 
-mat-panel-title.accentTextColor.schoolbox-panel-header-title.mat-expansion-panel-header-title {
-    visibility: hidden;
-}*/
+.about-us a:visited {
+    color: rgb(66, 0, 128);
+}
 
+.about-us {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+
+img.about-us {
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.about-us-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/pw/AM-JKLWpFMTSWya-mnMmY-mmPsuJ2uiq8cEKOBI_Uk8mH-KRPhppHnwpKpmx--YuRzCg4mZxLFYCBHKLtpEK8k689Z6nudz93dcKKaOHjFkb2prCqcvsFMqgamXioagBj7IlVa0RJ4Il2mtYsgV2aVf61U7a=w1919-h886-no?authuser=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 280px;
+    
+}
+
+.about-us-banner-text {
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+.about-us-one {
+    border: 5px double #3e1e5b;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.about-us-one-back {
+    background-color: #3e1e5b;
+}
+
+figure.video {
+    margin: 60px 100px;
+}
+
+.about-us-two-back {
+    background-color: #81c590;
+}
+
+.about-us-two {
+    border: 5px double #81c590;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+img.about-us-three {
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.about-us-three {
+    text-align: center;
+    
+    background-color:#dc3b60;
+    
+    border-radius: 5px;
+}
+
+
+
+.about-us-three-back {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.about-us-three-back a {
+    padding: 3px;
+    background-color: #dedcdb;
+    border-radius: 2em;
+}
+
+.about-us-three-back button {
+    margin: 0;
+}
