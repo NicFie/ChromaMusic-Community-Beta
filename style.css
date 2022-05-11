@@ -149,11 +149,15 @@ button:hover {
 .information {
     border: 5px double #3e1e5b;
     /*background-color: rgb(62, 30, 91, 0.4);*/
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.information h2 {
-    text-align: center;
-    font-size: 30px;
+.information h2, .information h3 {
+    width: 80%;
+    margin-left: 5%;
+    line-height: 1.6;
+    color: #342b25
 }
 
 .information img {
@@ -187,29 +191,29 @@ button:hover {
 
 
 /* training details */
-
 .training-details {
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     padding: 30px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #d8fce0;
-    
+    margin: 0;
 
 }
 
 /* call to action */
 
 .call-to-action {
-    background-color: #dc3b60;
+    /*background-color: #dc3b60;*/
     border: 5px double #652332;
-    font-size: 25px;
+    font-size: 20px;
     padding: 40px;
     margin: auto;
     text-align: center;
     display: flex;
+    justify-content: space-around;
 }
 
 .call-to-action .signup {
@@ -218,6 +222,7 @@ button:hover {
 
 .call-to-action span {
     font-size: 500px;
+    color: #dc3b60;
 }
 
 .logo-sponsors {
@@ -237,12 +242,12 @@ footer {
 
 /*About-us*/
 
-.about-us a {
+.about-us a, .news a {
     text-decoration: underline;
     color: blue;
 }
 
-.about-us a:visited {
+.about-us a:visited, .news a:visited {
     color: rgb(66, 0, 128);
 }
 
@@ -284,16 +289,34 @@ img.about-us {
     border: 5px double #3e1e5b;
     padding: 30px;
     width: 70%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background-color: white;
+    margin-right: 5px;
 }
 
 .about-us-one-back {
     background-color: #3e1e5b;
+    display: flex;
+    padding: 40px 8px;
+    justify-content: space-evenly;
 }
 
 figure.video {
     margin: 60px 100px;
+}
+
+.video p {
+    margin: 40px 10px;
+}
+
+.videos {
+    display: flex;
+}
+
+.about-us-videos {
+    margin: 80px;
+    margin-bottom: 20px;
+    width: 70%;
 }
 
 .about-us-two-back {
@@ -339,4 +362,186 @@ img.about-us-three {
 
 .about-us-three-back button {
     margin: 0;
+}
+
+/*News*/
+
+.news-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/pw/AM-JKLVboh5Sulb_ZcEZAARbPCb0kzcjfYZQb0bsp46N4Bfvi7UuZbCsfgGOfzx6nt27mHtSKrm88ZEQt8SgHmePovwNO9Dyo4nplZqFkE7yOwoC77L9pbLSF_emnNgk4JkfSyBMWMBiT6ZCyLntXZN2P-j0=w1919-h886-no?authuser=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 280px;
+    
+}
+
+.news-banner-text {
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 65%;
+  }
+
+#welcome-back {
+    background-image: url("https://images.unsplash.com/photo-1626539897275-73cbec67d24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-repeat: contain;
+}
+
+#inaugural-concert {
+    background-image: url("https://lh3.googleusercontent.com/pw/AM-JKLWKNvGA1ScIHWE7k-OmGd7HZMwLSPKulGBsVl-T5WG3PYNjEnx0mmL1Z_7X8-bPg_wdbTESwFoyokWLxVEZ1mvidlbxJZ4e1JG6dcqjxj-kE67OPW9nVq02Crbs4fmcM035zVwCljBjdkabbboChAQ2=w1919-h886-no?authuser=0");
+    background-size: 120% auto;
+}
+
+.odd-news-article h2, .odd-news-article h5{
+    
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.odd-news-article {
+    background-color: #81c590;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.even-news-article h2, .even-news-article h5{
+    
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.even-news-article {
+    background-color: #dc3b60;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px 0px;
+    
+  }
+
+  .news-seasons {
+      width: 100%;
+      padding: 20px 15px;
+      background-color: #3e1e5b;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      
+      
+  }
+
+  p.news {
+      line-height: 1.6;
+      background-color: white;
+      margin-top: 0;
+      padding: 30px 15px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    /*background-color: white;*/
+    /*padding: 20px;*/
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    
+   
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+/*Past events*/
+
+.past-events-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/pw/AM-JKLV3FTxoILaaRLMnPgrt7Y6O1504fQGdX3TNP5ue_5LdlKtW7EQoscQvTT-YCqGd0pvVoujvQ2rp0avmM0iabvw7_xO-Io84-r5W3uzk41PxKkOuFU_LpwSuQzmFe2jb7R96qMKHiM41ZsWRn45_wQGy=w1919-h886-no?authuser=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 280px;
+    
+}
+
+.past-events-banner-text {
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+/*Members*/
+
+.members-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://lh3.googleusercontent.com/pw/AM-JKLUzZf71cgTM8brlRaBvYOzMtDSfVL5-pCK7ObabRNyQonbusknZDsG8ePzCUKRRuSSbWyN28-GJPQB4OzefoVMdIJ6QFLEJlQ_mtRs9FT0xyRj3RabIiJ29RKMoGFFS7-ZSq4qBOoOeVjzGmaCNYH7D=w1919-h886-no?authuser=0");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 280px;
+    
+}
+
+.members-banner-text {
+    text-align: left;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+
+
+p.members {
+    line-height: 1.6;
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+main.members {
+    padding-bottom: 40px;
 }
