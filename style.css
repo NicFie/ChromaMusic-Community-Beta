@@ -509,6 +509,16 @@ img.about-us-three {
     font-size: 30px;
 }
 
+/*Past events*/
+
+.programme-image {
+    
+    height: 400px;
+    margin: 0 auto;
+    float:right;
+}
+
+
 /*Members*/
 
 .members-banner {
@@ -545,3 +555,4 @@ p.members {
 main.members {
     padding-bottom: 40px;
 }
+
