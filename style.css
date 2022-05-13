@@ -208,6 +208,7 @@ button:hover {
 .call-to-action {
     /*background-color: #dc3b60;*/
     border: 5px double #652332;
+    border-bottom: none;
     font-size: 20px;
     padding: 40px;
     margin: auto;
@@ -227,8 +228,13 @@ button:hover {
 
 .logo-sponsors {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 40px;
+    background-color: white;
+}
+
+.logo-sponsors img {
+    width: 20%;
 }
 
 footer {
